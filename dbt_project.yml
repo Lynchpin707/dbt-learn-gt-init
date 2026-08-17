@@ -36,6 +36,9 @@ models:
   jaffle_shop:
     +materialized: table
     +transient: false
+    +persist_docs: 
+      relation: true
+      columns: true
     marts:
       +materialized: table
     staging:
